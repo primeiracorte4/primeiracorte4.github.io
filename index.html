@@ -56,13 +56,20 @@ f  <tr>
 </tr>  
 </table>
 <p>tabela das rosas e caracteristicas</p>
-div {
-  width: 80px;
-  height: 80px;
-  background-color: skyblue;
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
-.rotated {
-  transform: rotate(45deg); /* Equal to rotateZ(45deg) */
-  background-color: pink;
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
+
