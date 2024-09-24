@@ -17,7 +17,23 @@
 
         p, th, td { font-size:18px; }
       }
-      
+  {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+     
     </style>
     <title>WIKI DAS FLORES</title>
   </head>
@@ -56,20 +72,4 @@ f  <tr>
 </tr>  
 </table>
 <p>tabela das rosas e caracteristicas</p>
-<p> {
-  animation-duration: 3s;
-  animation-name: slidein;</p>
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 
